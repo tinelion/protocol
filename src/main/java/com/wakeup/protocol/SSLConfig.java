@@ -45,7 +45,7 @@ public class SSLConfig {
         connector.setScheme("http");
         connector.setPort(80);    //请求入口
         connector.setSecure(false);
-        connector.setRedirectPort(port);    //如果请求能匹配https路径模式，请求重定向到该端口
+        connector.setRedirectPort(port);    //如果请求能匹配https路径模式，请求跳转到该端口
         return connector;
     }
 }
